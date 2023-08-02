@@ -119,135 +119,14 @@ z-index: 1;
     overflow: hidden;
 }
 
-/* *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'tajawal', sans-serif;
+.welcome-container{
+    max-width: 4rem;
+    max-height: 3rem;
+    z-index: 999;
+    background: red;
 }
 
-header{
-    margin-right: 1rem;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background: rgba(228, 228, 228, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    z-index: 100;
-}
-
-body{
-    overflow: hidden;
-}
-
-.logo{
-    padding-top: 6.5px;
-    max-width: 10rem;
-}
-
-.nav-bar ul{
-    display: flex;
-}
-
-.nav-links{
-    list-style: none;
-}
-
-.nav-link{
-    padding: 0px 20px;
-     border: 1px solid transparent;
-     gap: 2rem;
-    display: flex;
-     text-decoration: none;
-    color: #fff;
-    transition: ease 0.2s;
-    border-radius: 5px;
-}
-
-.nav-links a:hover{
-    color: rgba(228, 228, 228, 0.7);
-}
-
-.hamburger{
-    display: none;
-    height: 2.5rem;
-}
-
-.line{
-    margin: 0.4rem;
-    background-color: #fff;
-    width: 30px;
-    height: 5px;
-}
-
-@media only screen and (max-width: 43rem) {
-    header{
-        .hamburger{
-            display: block;
-            cursor: pointer;
-           }
-    
-           .hamburger .line{
-            width: 30px;
-            height: 3px;
-            background: #fefefe;
-            margin: 6px 0;
-           }
-    
-        .nav-bar{
-         height: 0px;
-         position: absolute;
-         top: 80px;
-         left: 0;
-         right: 0;
-         width: 100vw;
-         background: #202020;
-         transition: ease 0.5s;
-         overflow: hidden;
-         z-index: 20;
-        }
-        
-        .nav-bar{
-         height: 450px;
-         z-index: 20;
-        }
- 
-        .nav-bar .nav-links{
-         display: block;
-         width: fit-content;
-         margin: 80px auto 0 auto;
-         text-align: center;
-         transition: ease 0.3s;
-         opacity: 0;
-         z-index: 20;
-        }
- 
-        .nav-bar{
-         opacity: 1;
-         z-index: 20;
-        }
- 
-        .nav-bar li a{
-         margin-bottom: 12px;
-         z-index: 20;
-        }
-     }
-
-.nav-bar{
-    display: none;
-    z-index: 20;
-}
-
-}
-
-.intro-img{
-    object-fit: cover;
-    text-align: center;
-    position: relative;
+.background-two{
     height: 100vh;
-    min-width: 100vw;
-    overflow: hidden;
-} */
+    max-width: 100vh;
+}
