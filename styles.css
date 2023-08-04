@@ -17,7 +17,7 @@ body{
 
 }
 
-img{
+#logo_img{
     padding-top: 5.5px;
     max-width: 10rem;
 }
@@ -121,10 +121,10 @@ z-index: 1;
 .bg-intro{
     background-color: #303030;
     background-image: url(img/piano-thin.webp);
-    object-fit: cover;
     position: relative;
     height: 100vh;
-    height: 100svh;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -147,8 +147,7 @@ z-index: 1;
 
 .background-two{
     background-color: #101010;
-    height: 100vh;
-    height: 100svh;
+    max-height: 100%;
 }
 
 .head-section{
@@ -161,60 +160,74 @@ z-index: 1;
 
 .hs-h2{
     margin: 0px auto;
-    border-bottom: 2px solid #464646;
+    border-bottom: 2px solid #1EE39D;
     max-width: 7.5rem;
     margin-bottom: 20px;
 }
 
+.color{
+    font-family: 'patua neue', sans-serif;
+    color: #1EE39D;
+}
+
+span{
+    color: #1ee39d;
+}
+
 .grid-container{
-    margin-top: 2rem;
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-bottom: 3.5rem;
+    background-color: #101010;
+ 
+} 
+
+.product-grid{
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    columns: auto;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-@media (min-width: 55em){
-    .grid-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+.card{
 
-.grid{
-    min-width: 25rem;
-    min-height: 12rem;
-    margin: 0 auto;
-    background-color: white;
-    position: center;
-    border-radius: 5px;
     border: 1px solid white;
-    text-align: center;
 }
 
-.grid-h2{
-    font-size: 1.4rem;
-    letter-spacing: 1.5px;
-    font-family: 'bebas neue', sans-serif;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
+img{
+    max-width: 100%;
+    
+}
+.card__img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+.card__content{
+    background: #101010;
+    align-self: end;
+    padding: .5rem;
+}
+
+.card__title, .card__description{
     color: white;
-    background-color: rgba(227, 227, 227, 0.1);
-    padding: 5px;
-    width: 100px;
-    border: 1px solid #fff;
+    text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-.g-one{
-    background-image: url(img/piano-thin.webp);
-    align-items: center;
+.card__title{
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1.5px;
 }
-.g-two{
-    background-image: url(img/piano-thin.webp);
-}
-.g-three{
-    background-image: url(img/piano-thin.webp);
-}
-.g-four{
-    background-image: url(img/piano-thin.webp);
+
+.background-three{
+    min-width: 100%;
+    background-color: #1e1e1e;
 }

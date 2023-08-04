@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="img/FullLogo_Transparent.png" alt="music-valley-logo"></div>
+        <div class="logo"><img src="img/FullLogo_Transparent.png" alt="music-valley-logo" id="logo_img"></div>
         <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -40,8 +40,8 @@
 
     <div class="bg-intro">
         <div class="text-intro">
-            <h3 class="h3-intro">Welcome to Music Valley.</h3>
-            <p>Music courses for beginners.</p>
+            <h3 class="h3-intro">Welcome to Musi<span class="color">c</span> Vall<span class="color">ey</span>.</h3>
+            <p>Full <span>free</span> music courses for beginners.</p>
         </div>
     </div>
 
@@ -50,42 +50,54 @@
             <h2 class="hs-h2">COURSES</h2>
             <p>Learn the basic fundamentals of music theory through the any of the given courses we offer.</p>
         </div>
+
         <div class="grid-container">
-           <a> <div class="grid g-one">
-                <div class="overlay-text"></div>
-                <h2 class="grid-h2">PIANO</h2>
+            <a href="piano.html">
+            <div class="product-grid">
+            <div class="card">
+                <div class="overlay piano"></div>
+                <img src="img/piano-thin.webp" alt="" class="card__img">
+                <div class="card__content"></div>
+                <h2 class="card__title">PIANO</h2>
+                <p class="card__description">Learn basic fundamentals of piano/keyboard.</p>
             </div>
         </a>
-            <a><div class="grid g-two">
-                <div class="overlay-text"></div>
-                <h2 class="grid-h2">BASS</h2>
+        <a href="guitar.html">
+            <div class="card">
+                <img src="img/piano-thin.webp" alt="" class="card__img">
+                <div class="card__content"></div>
+                <h2 class="card__title">GUITAR</h2>
+                <p class="card__description">Learn basic fundamentals of the electric guitar.</p>
             </div>
         </a>
-        <a>
-            <div class="grid g-three">
-                <div class="overlay-text"></div>
-                <h2 class="grid-h2">GUITAR</h2>
+        <a href="bass.html">
+            <div class="card">
+                <img src="img/piano-thin.webp" alt="" class="card__img">
+                <div class="card__content"></div>
+                <h2 class="card__title">BASS</h2>
+                <p class="card__description">Learn basic fundamentals of the electric  bass.</p>
             </div>
         </a>
-        <a>
-            <div class="grid g-four">
-                <div class="overlay-text"></div>
-                <h2 class="grid-h2">DRUMS</h2>
+        <a href="drums.html">
+            <div class="card">
+                <img src="img/piano-thin.webp" alt="" class="card__img">
+                <div class="card__content"></div>
+                <h2 class="card__title">DRUMS</h2>
+                <p class="card__description">Learn basic fundamentals of the drums/percussion.</p>
             </div>
         </a>
         </div>
-           </div>
+    </div>
 
+    <div class="background-three">
+        <div class="head-section">
+            <h2 class="hs-h2">ABOUT</h2>
+            <p>Learn more about Music Valley and our founder.</p>
+        </div>
+    </div>
 
+    <script src="script.js">
 
-
-
-    <script>
-        hamburger = document.querySelector('.hamburger');
-        hamburger.onclick = function(){
-            navBar = document.querySelector('.nav-bar');
-            navBar.classList.toggle('active');
-        }
     </script>
 </body>
 </html>
