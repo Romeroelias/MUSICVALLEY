@@ -253,14 +253,15 @@ img{
 }
 
 .box{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.3rem;
     background-color: rgba(30, 30, 30, 0.9);
     flex-basis: 0;
     flex-grow: 1;
     border-radius: 5px;
     border: 2px solid #1ee39d;
+    text-align: center;
 }
 
 .title{
@@ -270,6 +271,31 @@ img{
     margin: center;
     font-weight: bold;
     font-size: 1.3rem;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    max-width: 6rem;
+    text-align: center;
+    outline: 1px solid #1EE39D;
+    color: white;
+    padding: 5px;
+    border-radius: 70px;
+    font-size: 12px;
+    transition: ease 0.3s;
+}   
+
+.button:hover{
+    background-color: rgba(104, 104, 104, 0.2);
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
 }
 
 .section-contact{
@@ -371,4 +397,19 @@ label{
 
         .title{
             color: #fff;
+        }
+
+        .submit-button{
+            background-color: transparent;
+            padding: 15px;
+            border-radius: 20px;
+            border: 1px solid #1EE39D;
+            color: white;
+            font-weight: bold;
+            transition: ease 0.3s;
+        }
+
+        .submit-button:hover{
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
         }
