@@ -295,6 +295,7 @@ img{
 
 .button:hover{
     background-color: rgba(104, 104, 104, 0.2);
+    cursor: pointer;
 }
 
 a{
@@ -406,6 +407,7 @@ label{
         }
 
         .submit-button{
+            margin-right: 10px;
             background-color: transparent;
             padding: 15px;
             border-radius: 20px;
@@ -413,9 +415,19 @@ label{
             color: white;
             font-weight: bold;
             transition: ease 0.3s;
+            float: right;
         }
 
         .submit-button:hover{
             cursor: pointer;
             background: rgba(255, 255, 255, 0.1);
+        }
+
+        .p-contact{
+            max-width: 500px;
+            color: white;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
         }
