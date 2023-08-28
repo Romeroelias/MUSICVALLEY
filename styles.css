@@ -438,3 +438,23 @@ label{
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
+
+        .footer{
+            gap: 2rem;
+            display: flex;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            text-align: center;
+        }
+
+
+        .heading{
+            padding-bottom: 2px;
+            color: white;
+            border-bottom: 2px solid #1EE39D;
+            text-align: center;
+        }
+
+        .holder{
+            padding-top: 10px;
+        }
