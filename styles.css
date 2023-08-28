@@ -439,22 +439,50 @@ label{
             padding-right: 1.5rem;
         }
 
-        .footer{
-            gap: 2rem;
-            display: flex;
-            padding-left: 3rem;
-            padding-right: 3rem;
-            text-align: center;
-        }
-
-
         .heading{
             padding-bottom: 2px;
             color: white;
             border-bottom: 2px solid #1EE39D;
             text-align: center;
+            letter-spacing: 1.5px;
+            font-family: 'bebas neue', sans-serif;
         }
 
         .holder{
             padding-top: 10px;
+        }
+
+        .website, .credits, .social{
+            margin-top: 1rem;
+        }
+
+    
+
+        .footer{
+            padding-bottom: 1rem;
+            gap: 2rem;
+            display: flex;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            text-align: center;
+            /* background-color: red; */
+            max-width: 60rem;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .icons{
+            margin: 2px;
+            max-width: 1.3rem;
+        }
+
+        .media{
+            display: none;
+        }
+
+        @media only screen and (max-width: 400px){
+            footer{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
         }
